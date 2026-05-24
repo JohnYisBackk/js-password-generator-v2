@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Password Generator v2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero-panel">
+        <span class="eyebrow">Security Utility</span>
+
+        <h1>Password Generator v2</h1>
+        <p>
+          Generate strong passwords with custom rules, live strength feedback,
+          and one-click copy support.
+        </p>
+
+        <div class="security-score">
+          <span>Security Mode</span>
+          <strong id="securityMode">Balanced</strong>
+        </div>
+      </section>
+
+      <section class="generator-panel">
+        <div class="output-card">
+          <label for="PasswordOutput">Generated password</label>
+
+          <div class="output-row">
+            <input
+              type="text"
+              id="passwordOutput"
+              placeholder="Click generate..."
+              readonly
+            />
+
+            <button id="copyBtn" type="button">Copy</button>
+          </div>
+
+          <p id="statusText" class="status-text">Ready to generate.</p>
+        </div>
+
+        <div class="controls-grid">
+          <div class="length-card">
+            <div class="control-header">
+              <div>
+                <span class="small-label">Length</span>
+                <h2><span id="lengthValue">16</span> chars</h2>
+              </div>
+            </div>
+
+            <input type="range" id="lengthRange" min="4" max="40" value="16" />
+          </div>
+
+          <div class="strength-card">
+            <div class="control-header">
+              <div>
+                <span class="small-label">Strength</span>
+                <h2 id="strengthLabel">Medium</h2>
+              </div>
+            </div>
+
+            <div class="strength-track">
+              <div id="strengthFill" class="strength-fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="options-card">
+          <span class="small-label">Characters</span>
+
+          <div class="options-grid">
+            <label class="option">
+              <input type="checkbox" id="lowercaseOption" checked />
+              <span>Lowercase</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" id="uppercaseOption" checked />
+              <span>Uppercase</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" id="numbersOption" checked />
+              <span>Numbers</span>
+            </label>
+
+            <label class="option">
+              <input type="checkbox" id="symbolsOption" />
+              <span>Symbols</span>
+            </label>
+
+            <label class="option option-wide">
+              <input type="checkbox" id="similarOption" />
+              <span>Exclude similar Characters</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="generateBtn" class="generate-btn" type="button">
+            Generate Password
+          </button>
+
+          <button id="resetBtn" class="reset-btn" type="button">Reset</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
