@@ -8,7 +8,7 @@ Generate strong passwords with custom rules, live strength feedback and one-clic
 
 ## 🚀 Live Demo
 
-👉 https://your-live-demo-link.vercel.app
+👉 https://johnyisbackk.github.io/js-password-generator-v2/
 
 ---
 
@@ -55,16 +55,6 @@ Generate strong passwords with custom rules, live strength feedback and one-clic
 
 ---
 
-## 📸 Preview
-
-Add screenshot here:
-
-```txt
-/assets/preview.png
-```
-
----
-
 ## ▶️ Run Locally
 
 ```bash
@@ -79,8 +69,7 @@ index.html
 
 in your browser.
 
----
 
-## 📄 License
 
-Free to use and modify.
+
+
